@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Assessment 01</title>
+
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/externalScript.js"></script>
+</head>
+<body>
+    <main>
+    <p id="paragraph">Initial text.</p>
+    <button onclick="changeTextInline()">change text inline</button>
+    <button onclick="changeTextExternal()">change text external</button>
+        <div id="imageContainer">
+            <img id="image1" src="images/sweethearts.jpg" alt="image 1">
+            <img id="image2" src="images/gifts.jpg" alt="image 2" style="display: none;">
+            <img id="image3" src="images/heart.png" alt="image 3" style="display: none;">
+            <br><br>
+            <button onclick="changeImage(1)">Image 1</button>
+            <button onclick="changeImage(2)">Image 2</button>
+            <button onclick="changeImage(3)">Image 3</button>
+        </div><br>
+        <div class="buttons">
+                <button onclick="document.getElementById('imageContainer').style.display='block'">show</button>
+                <button onclick="document.getElementById('imageContainer').style.display='none'">hide</button>
+            </div>
+            <br>
+            <button onclick="changeTextColor()">change text color</button>
+            <button onclick="changeImageWidth()">change image width</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;2024 Elmedina Fejzulai</p>
+    </footer>
+</body>
+</html>
