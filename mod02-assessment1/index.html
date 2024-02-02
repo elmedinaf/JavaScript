@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Basics, Math, Variables</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/scripts.js"></script>
+</head>
+<body>
+    <form id="orderForm">
+        <h2>Food Order Form</h2>
+
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" required>
+
+        <h3>Drinks</h3>
+        <label for="cola">Coca Cola:</label>
+        <input type="number" id="cola" name="Coca Cola" value="0"><br>
+        <label for="fanta">Fanta:</label>
+        <input type="number" id="fanta" name="Fanta" value="0"><br>
+        <label for="icedTea">Iced Tea:</label>
+        <input type="number" id="icedTea" name="Iced Tea" value="0"><br>
+        <label for="lemonade">Lemonade:</label>
+        <input type="number" id="lemonade" name="Lemonade" value="0"><br>
+        <label for="coffee">Coffee:</label>
+        <input type="number" id="coffee" name="Coffee" value="0">
+
+        <h3>Sandwiches</h3>
+        <label for="hamburger">Hamburger:</label>
+        <input type="number" id="hamburger" name="hamburger" value="0"><br>
+        <label for="cheeseburger">Cheeseburger:</label>
+        <input type="number" id="cheeseburger" name="Cheeseburger" value="0"><br>
+        <label for="grilledCheese">Grilled Cheese:</label>
+        <input type="number" id="grilledCheese" name="Grilled Cheese" value="0"><br>
+        <label for="turkeyClub">Turkey Club:</label>
+        <input type="number" id="turkeyClub" name="Turkey Club" value="0"><br>
+        <label for="roastBeef">Roast Beef:</label>
+        <input type="number" id="roastBeef" name="Roast Beef" value="0">
+
+        <h3>Desserts/Sides</h3>
+        <label for="iceCream">Icecream:</label>
+        <input type="number" id="iceCream" name="iceCream" value="0"><br>
+        <label for="chocolateCookie">Chocolate Cookie:</label>
+        <input type="number" id="chocolateCookie" name="Chocolate Cookie" value="0"><br>
+        <label for="cheeseCake">Cheesecake:</label>
+        <input type="number" id="cheeseCake" name="Cheese Cake" value="0"><br>
+        <label for="nutellaCrepe">Nutella Crepe:</label>
+        <input type="number" id="nutellaCrepe" name="Nutella Crepe" value="0"><br>
+        <label for="tiramisu">Tiramisu:</label>
+        <input type="number" id="tiramisu" name="Tiramisu" value="0"><br>
+        <br>
+
+        <div id="orderSummary"></div>
+        <button type="button" onclick="calculateOrder()">Submit Order</button>
+    </form>
+    <footer>
+        <p>&copy;2024 Elmedina Fejzulai</p>
+    </footer>
+</body>
+</html>
