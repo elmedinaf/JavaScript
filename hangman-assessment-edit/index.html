@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman</title>
     <link rel="stylesheet" href="css/styles.css">
-    
 </head>
 
 <body onload="setup()">
@@ -19,9 +18,7 @@
             <div class="row">
                 <div class="col-6">
                     <h2>Word:</h2>
-                    <p id="word">
-
-                    </p>
+                    <p id="word"></p>
                     <p id="guesses"></p>
                 </div>
                 <div class="col-6">
@@ -29,24 +26,23 @@
                 </div>
             </div>
             <div class="row">
-                <div id="col-6">
-                    <form>
+                <div class="col-6">
+                    <form onsubmit="submitGuess(); return false;">
                         <label for="guess">Guess a letter</label>
-                        <input type="text" id="guess" width=5>
-                        <button type='button' id="submit">Submit</button>
+                        <input type="text" id="guess" style="width: 5em;">
+                        <button type="submit" id="submit">Submit</button>
                     </form>
                 </div>
                 <div class="col-6">
                     <p id="guessed"></p>
                 </div>
-               
             </div>
-    </div>
-
-    </main>
+        </main>
+        <footer>
+            <p>&copy;2024 Elmedina Fejzulai</p>
+        </footer>
     </div>
     <script src="scripts/hangman.js"></script>
 </body>
-
 
 </html>
