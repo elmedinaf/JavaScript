@@ -1,0 +1,2 @@
+<h2>This is a Heading</h2>
+<p>This is a paragraph to display using AJAX.</p>
